@@ -1,0 +1,17 @@
+<div class="container px-4 px-lg-5 mt-5">
+    <div class="text-center" *ngIf="game">
+        <h2 class="fw-bolder">{{game.name | uppercase}} Details</h2>
+        <img src={{game.image}} alt="..." />
+        <div>
+            <span><strong>Identificador de juego: </strong></span>{{game.id}}
+            <span><strong>Fecha de lanzamiento: </strong></span>{{game.released}}
+            <span><strong>Rating del juego: </strong></span>{{game.rating}}
+        </div>
+        <div>
+            <span><strong>Descripción: </strong></span>{{game.description}}            
+        </div>
+        <div class="py-3">
+            <button class="btn btn-outline-success mt-auto" (click)="goBack()">Volver</button>
+        </div>
+    </div>
+</div>
